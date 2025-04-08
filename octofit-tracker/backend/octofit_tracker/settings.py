@@ -2,7 +2,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'your-secret-key'
+SECRET_KEY = 'django-insecure-ln--#m!w7978up)bakxz&1^mnu%5n5f7i$km#5i+0bh-+izior'
 
 DEBUG = True
 #kdbhiWBEFKJwbrf
@@ -16,6 +16,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'djongo',
     'corsheaders',
     'octofit_tracker',
 ]
@@ -87,4 +88,23 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# Enable CORS for all origins
 CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_METHODS = ['DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',]
+CORS_ALLOW_HEADERS = ['accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',]
+
+# Allow all hosts
+ALLOWED_HOSTS = ['*']
