@@ -6,7 +6,7 @@ SECRET_KEY = 'django-insecure-ln--#m!w7978up)bakxz&1^mnu%5n5f7i$km#5i+0bh-+izior
 
 DEBUG = True
 #kdbhiWBEFKJwbrf
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'redesigned-space-telegram-q766prgv55p72xvvv-8000.app.github.dev']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -107,4 +107,4 @@ CORS_ALLOW_HEADERS = ['accept',
     'x-requested-with',]
 
 # Allow all hosts
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'redesigned-space-telegram-q766prgv55p72xvvv-8000.app.github.dev']
