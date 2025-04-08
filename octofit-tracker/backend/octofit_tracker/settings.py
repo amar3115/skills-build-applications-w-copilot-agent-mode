@@ -19,7 +19,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'octofit_tracker',
 ]
-
+      
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
